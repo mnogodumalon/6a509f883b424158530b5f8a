@@ -1,0 +1,3 @@
+- Kursplan (kursplan): kursname[lookup/select], trainer[lookup/select], wochentag[lookup/select], uhrzeit[string/text], raum[string/text], max_plaetze[number], kurs_status[lookup/radio]
+- Buchungen (buchungen): vorname[string/text], nachname[string/text], email[string/email], kurs[applookup/select], kursdatum[date/date], buchungsstatus[lookup/radio]
+  → kurs links to app_id 6a509f71578595715144f358

@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Kursplan": {
+      "placeholders_set": 7,
+      "defaults_keys": ["kurs_status"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten ohne Preis-/Kosten-Felder. Keine Lookup-Kette zu numerischen Zielwerten, keine Datums-Paarungen. Einziger Default: kurs_status auf 'findet_statt' für neue Kurse."
+    },
+    "Buchungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["kursdatum", "buchungsstatus"],
+      "computed_keys": [],
+      "reason": "Reine Buchungs-Registrierung — Vorname, Nachname, Email, Kurs (applookup ohne Preis), Kursdatum. Keine Berechnung sinnvoll. Defaults: Kursdatum=heute (typisches Buchungsmuster), Status='gebucht' (Normalfall)."
+    }
+  }
+}

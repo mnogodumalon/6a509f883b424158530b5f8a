@@ -1,0 +1,19 @@
+{
+  "KursplanDialog.tsx": {
+    "kursname":    "Welcher Kurs?",
+    "trainer":     "Wer unterrichtet?",
+    "wochentag":   "An welchem Tag?",
+    "uhrzeit":     "z. B. 10:00 - 11:30",
+    "raum":        "z. B. Saal 1",
+    "max_plaetze": "z. B. 12",
+    "kurs_status": "Wird der Kurs angeboten?"
+  },
+  "BuchungenDialog.tsx": {
+    "vorname":     "z. B. Max",
+    "nachname":    "z. B. Müller",
+    "email":       "z. B. max@example.com",
+    "kurs":        "Welcher Kurs wird gebucht?",
+    "kursdatum":   "Wann findet der Kurs statt?",
+    "buchungsstatus": "Ist der Platz bestätigt?"
+  }
+}

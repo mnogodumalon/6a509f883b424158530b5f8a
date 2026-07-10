@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "kursplan",
+      "app_id": "6a509f71578595715144f358",
+      "path": "/rest/apps/6a509f71578595715144f358/records",
+      "allowed_fields": [
+        "kursname",
+        "trainer",
+        "wochentag",
+        "uhrzeit",
+        "raum",
+        "max_plaetze",
+        "kurs_status"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Kursplan — Formular"
+    },
+    {
+      "entity": "buchungen",
+      "app_id": "6a509f74f14684380deb788b",
+      "path": "/rest/apps/6a509f74f14684380deb788b/records",
+      "allowed_fields": [
+        "vorname",
+        "nachname",
+        "email",
+        "kursdatum",
+        "buchungsstatus"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Buchungen — Formular"
+    }
+  ]
+}
