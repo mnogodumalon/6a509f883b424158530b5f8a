@@ -16,6 +16,8 @@ import PublicFormBuchungen from '@/pages/public/PublicForm_Buchungen';
 // <public:imports>
 // </public:imports>
 // <custom:imports>
+const GruppenbuchungPage = lazy(() => import('@/pages/intents/GruppenbuchungPage'));
+const KursauslastungPage = lazy(() => import('@/pages/intents/KursauslastungPage'));
 // </custom:imports>
 
 export default function App() {
@@ -37,6 +39,8 @@ export default function App() {
                 <Route path="buchungen/:id" element={<BuchungenDetailPage />} />
                 <Route path="admin" element={<AdminPage />} />
                 {/* <custom:routes> */}
+                <Route path="intents/gruppenbuchung" element={<Suspense fallback={null}><GruppenbuchungPage /></Suspense>} />
+                <Route path="intents/kursauslastung" element={<Suspense fallback={null}><KursauslastungPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>

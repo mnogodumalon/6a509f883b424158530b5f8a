@@ -20,6 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
+import { IconUsers, IconChartBar } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -35,6 +36,8 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
+  { path: '/intents/gruppenbuchung', label: 'Gruppenbuchung', icon: IconUsers, description: 'Mehrere Teilnehmer auf einmal in einen Kurs buchen' },
+  { path: '/intents/kursauslastung', label: 'Kursauslastung', icon: IconChartBar, description: 'Buchungen eines Kurses verwalten und Statusänderungen vornehmen' },
   // </custom:intents>
 ];
 
@@ -45,4 +48,4 @@ export const INTENTS: IntentLink[] = [
  * purpose — a scaffold update resets it to false (self-healing if Phase 2
  * never ran).
  */
-export const INTENTS_PENDING = true;
+export const INTENTS_PENDING = false;
